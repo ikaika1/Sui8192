@@ -67,7 +67,7 @@ const checkPreapprovals = async (chain, contractAddress, activeGameAddress, wall
 const checkValidMove = (packedSpaces, directionNumber) => {
   // console.log("checkValidMove", packedSpaces, directionNumber)
   const direction = parseInt(directionNumber)
-  let validMove = false;
+  let validMove = true;
   for (let i=0; i<board.ROWS; ++i) {
     for (let j=0; j<board.COLUMNS; ++j) { 
       const tile = board.spaceAt(packedSpaces, i, j);
